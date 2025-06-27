@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Autohub\\src\\AuctionService\\AuctionService.csproj": {}
+    "/Users/thanhduy/Projects/src/AuctionService/AuctionService.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Autohub\\src\\AuctionService\\AuctionService.csproj": {
+    "/Users/thanhduy/Projects/src/AuctionService/AuctionService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Autohub\\src\\AuctionService\\AuctionService.csproj",
+        "projectUniqueName": "/Users/thanhduy/Projects/src/AuctionService/AuctionService.csproj",
         "projectName": "AuctionService",
-        "projectPath": "E:\\Projects\\Autohub\\src\\AuctionService\\AuctionService.csproj",
-        "packagesPath": "C:\\Users\\Thanh Duy\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Autohub\\src\\AuctionService\\obj\\",
+        "projectPath": "/Users/thanhduy/Projects/src/AuctionService/AuctionService.csproj",
+        "packagesPath": "/Users/thanhduy/.nuget/packages/",
+        "outputPath": "/Users/thanhduy/Projects/src/AuctionService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Thanh Duy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/thanhduy/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -43,6 +43,22 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Thanh Duy\\.dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/thanhduy/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
