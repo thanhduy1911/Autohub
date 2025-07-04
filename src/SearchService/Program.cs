@@ -2,7 +2,6 @@ using System.Net;
 using MassTransit;
 using Polly;
 using Polly.Extensions.Http;
-using SearchService.Consumers;
 using SearchService.Consumers.Auction;
 using SearchService.Data;
 using SearchService.Services;
@@ -23,7 +22,7 @@ builder.Services.AddMassTransit(x =>
         configuration.ReceiveEndpoint("search-auction-created", e =>
         {
             e.UseMessageRetry(r => r.Interval(5, 5));
-            e.ConfigureConsumer<AuctionCreatedConsumer>(context);;
+            e.ConfigureConsumer<AuctionCreatedConsumer>(context);
         });
         configuration.ConfigureEndpoints(context);
     });
@@ -35,7 +34,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Lifetime.ApplicationStarted.Register(async () =>
+app.Lifetime.ApplicationStarted.Register(async void () =>
 {
     try
     {
@@ -44,7 +43,6 @@ app.Lifetime.ApplicationStarted.Register(async () =>
     catch (Exception e)
     {
         Console.WriteLine(e);
-        throw;
     }
 });
 
