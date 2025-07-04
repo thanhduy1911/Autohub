@@ -153,3 +153,10 @@ E:/Projects/Autohub/src/AuctionService/obj/Debug/net9.0/ref/AuctionService.dll
 /Users/thanhduy/Projects/src/AuctionService/obj/Debug/net9.0/AuctionService.pdb
 /Users/thanhduy/Projects/src/AuctionService/obj/Debug/net9.0/AuctionService.genruntimeconfig.cache
 /Users/thanhduy/Projects/src/AuctionService/obj/Debug/net9.0/ref/AuctionService.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/MassTransit.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/MassTransit.Abstractions.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/MassTransit.RabbitMqTransport.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/RabbitMQ.Client.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Contracts.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Contracts.pdb
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll
