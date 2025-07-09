@@ -160,3 +160,11 @@ E:/Projects/Autohub/src/AuctionService/obj/Debug/net9.0/ref/AuctionService.dll
 /Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Contracts.dll
 /Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Contracts.pdb
 /Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
