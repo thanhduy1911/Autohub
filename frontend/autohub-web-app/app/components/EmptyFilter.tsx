@@ -1,0 +1,32 @@
+import React from 'react';
+import {useParamsStore} from "@/hooks/useParamsStore";
+import Heading from "@/app/components/Heading";
+import {Button} from "flowbite-react";
+
+type Props = {
+    title?: string;
+    subtitle?: string;
+    showReset?: boolean;
+}
+function EmptyFilter({
+    title = "No matching filter",
+    subtitle = "Try changing the filter or search terms.",
+    showReset
+}: Props) {
+    const reset = useParamsStore(state => state.reset);
+    
+    return (
+        <div className={'flex flex-col gap-2 items-center justify-center h-[40vh] shadow-lg'}>
+            <Heading title={title} subtitle={subtitle} center/>
+            <div className={'mt-4'}>
+                {showReset && (
+                    <Button outline onClick={reset}>
+                        Remove filters
+                    </Button>
+                )}
+            </div>
+        </div>
+    );
+}
+
+export default EmptyFilter;
