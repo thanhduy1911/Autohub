@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY Autohub.sln ./
 COPY src/AuctionService/AuctionService.csproj ./src/AuctionService/
+COPY src/BiddingService/BiddingService.csproj src/BiddingService/BiddingService.csproj
 COPY src/Contracts/Contracts.csproj ./src/Contracts/
 
 RUN dotnet restore ./src/AuctionService/AuctionService.csproj

@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY Autohub.sln ./
 COPY src/GatewayService/GatewayService.csproj ./src/GatewayService/
+COPY src/BiddingService/BiddingService.csproj src/BiddingService/BiddingService.csproj
 
 RUN dotnet restore ./src/GatewayService/GatewayService.csproj
 

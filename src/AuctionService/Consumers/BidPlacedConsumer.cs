@@ -6,20 +6,20 @@ namespace AuctionService.Consumers;
 
 public class BidPlacedConsumer(AuctionDbContext dbContext) : IConsumer<BidPlaced>
 {
-    public async Task Consume(ConsumeContext<BidPlaced> consumeContext)
+    public async Task Consume(ConsumeContext<BidPlaced> context)
     {
         Console.WriteLine("--> Consuming BidPlaced event");
-        var auction = await dbContext.Auctions.FindAsync(consumeContext.Message.AuctionId);
-        if (auction != null)
+        
+        var auction = await dbContext.Auctions.FindAsync(Guid.Parse(context.Message.AuctionId))
+                      ?? throw new MessageException(typeof(AuctionFinished), "Cannot retrieve this auction");
+
+        if (auction.CurrentHighBid == null
+            || context.Message.BidStatus.Contains("Accepted")
+            && context.Message.Amount > auction.CurrentHighBid)
         {
-            if (auction.CurrentHighBid == null
-                || consumeContext.Message.BidStatus.Contains("Accepted")
-                && consumeContext.Message.Amount > auction.CurrentHighBid
-               )
-            {
-                auction.CurrentHighBid = consumeContext.Message.Amount;
-                await dbContext.SaveChangesAsync();
-            }
+            auction.CurrentHighBid = context.Message.Amount;
         }
+
+        await dbContext.SaveChangesAsync();
     }
 }

@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY Autohub.sln ./
 COPY src/IdentityService/IdentityService.csproj ./src/IdentityService/
+COPY src/BiddingService/BiddingService.csproj src/BiddingService/BiddingService.csproj
 
 RUN dotnet restore ./src/IdentityService/IdentityService.csproj
 
