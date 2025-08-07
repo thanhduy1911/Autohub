@@ -11,7 +11,7 @@ public class BidPlacedConsumer : IConsumer<BidPlaced>
     {
         Console.WriteLine("--> Consuming BidPlaced event");
         
-        var auction = await DB.Find<Item>().OneAsync(context.Message.AuctionId);
+        var auction = await DB.Find<Item>().OneAsync(Guid.Parse(context.Message.AuctionId));
 
         if (auction != null)
         {
