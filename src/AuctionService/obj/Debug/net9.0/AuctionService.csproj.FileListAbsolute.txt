@@ -168,3 +168,10 @@ E:/Projects/Autohub/src/AuctionService/obj/Debug/net9.0/ref/AuctionService.dll
 /Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Google.Protobuf.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Grpc.AspNetCore.Server.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Grpc.AspNetCore.Server.ClientFactory.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Grpc.Core.Api.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Grpc.Net.Client.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Grpc.Net.ClientFactory.dll
+/Users/thanhduy/Projects/src/AuctionService/bin/Debug/net9.0/Grpc.Net.Common.dll
